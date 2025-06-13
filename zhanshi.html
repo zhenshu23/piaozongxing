@@ -1,371 +1,738 @@
-  <!-- 装饰元素 -->
-
-  &#x3C;div class=&#x22;absolute top-1/4 left-10 w-32 h-32 bg-softPink/30 rounded-full blur-3xl animate-pulse-slow&#x22;&#x3E;&#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;absolute bottom-1/4 right-10 w-40 h-40 bg-mintGreen/30 rounded-full blur-3xl animate-pulse-slow&#x22; style=&#x22;animation-delay: 1s;&#x22;&#x3E;&#x3C;/div&#x3E;
-
-  <!-- 内容 -->
-
-  &#x3C;div class=&#x22;container mx-auto px-6 md:px-12 relative z-20 flex flex-col md:flex-row items-center justify-between&#x22;&#x3E;
-    &#x3C;!-- &#x6587;&#x5B57;&#x5185;&#x5BB9; --&#x3E;
-    &#x3C;div class=&#x22;md:w-1/2 text-center md:text-left mb-10 md:mb-0&#x22;&#x3E;
-      &#x3C;h1 class=&#x22;text-[clamp(2.5rem,5vw,4rem)] font-bold font-comic leading-tight mb-4&#x22;&#x3E;
-        &#x3C;span class=&#x22;block&#x22;&#x3E;&#x6734;&#x7EFC;&#x661F;&#x3C;/span&#x3E;
-        &#x3C;span class=&#x22;text-glow animate-glow&#x22;&#x3E;ENHYPEN&#x3C;/span&#x3E;
-      &#x3C;/h1&#x3E;
-      &#x3C;p class=&#x22;text-lg md:text-xl text-gray-700 mb-8 max-w-lg mx-auto md:mx-0&#x22;&#x3E;
-        &#x6734;&#x7EFC;&#x661F;&#xFF08;&#xBC15;&#xC885;&#xC131;&#x3001;Park Jong Seong&#xFF09;&#xFF0C;&#x827A;&#x540D;JAY&#xFF0C;2002&#x5E74;4&#x6708;20&#x65E5;&#x51FA;&#x751F;&#x4E8E;&#x97E9;&#x56FD;&#x9996;&#x5C14;&#x7279;&#x522B;&#x5E02;&#xFF0C;&#x97E9;&#x56FD;&#x6D41;&#x884C;&#x4E50;&#x7537;&#x6B4C;&#x624B;&#x3001;&#x7537;&#x5B50;&#x6F14;&#x5531;&#x7EC4;&#x5408;ENHYPEN&#x6210;&#x5458;&#x3002;
-      &#x3C;/p&#x3E;
-      &#x3C;div class=&#x22;flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start&#x22;&#x3E;
-        &#x3C;a href=&#x22;#news&#x22; class=&#x22;px-8 py-3 bg-gradient-to-r from-softPink to-softPurple rounded-lg text-white font-bold hover:shadow-lg hover:shadow-softPink/30 transition-all duration-300 transform hover:-translate-y-1&#x22;&#x3E;
-          &#x6700;&#x65B0;&#x7269;&#x6599;
-        &#x3C;/a&#x3E;
-        &#x3C;a href=&#x22;#mv&#x22; class=&#x22;px-8 py-3 bg-transparent border-2 border-babyBlue rounded-lg text-darkBg font-bold hover:bg-babyBlue/10 transition-all duration-300 transform hover:-translate-y-1&#x22;&#x3E;
-          &#x89C2;&#x770B;MV
-        &#x3C;/a&#x3E;
-      &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-
-    <!-- 图片 -->
-
-    &#x3C;div class=&#x22;md:w-1/2 relative&#x22;&#x3E;
-      &#x3C;div class=&#x22;relative w-64 h-64 md:w-80 md:h-80 mx-auto&#x22;&#x3E;
-        &#x3C;!-- &#x4E3B;&#x56FE; --&#x3E;
-        &#x3C;img src=&#x22;pic_1.jpg&#x22; alt=&#x22;&#x6734;&#x7EFC;&#x661F;&#x7167;&#x7247;&#x22; class=&#x22;w-full h-full object-cover rounded-lg pixel-border animate-float-slow&#x22;&#x3E;
-
-        <!-- 装饰元素 -->
-
-        &#x3C;div class=&#x22;absolute -top-5 -right-5 w-20 h-20 bg-lemonYellow rounded-lg pixel-border flex items-center justify-center&#x22;&#x3E;
-          &#x3C;span class=&#x22;font-comic font-bold text-darkBg&#x22;&#x3E;NEW&#x3C;/span&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;absolute -bottom-5 -left-5 w-32 h-12 bg-babyBlue rounded-lg pixel-border flex items-center justify-center&#x22;&#x3E;
-          &#x3C;span class=&#x22;font-comic font-bold text-darkBg&#x22;&#x3E;ENHYPEN&#x3C;/span&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-  &#x3C;/div&#x3E;
-&#x3C;/section&#x3E;
-
-<!-- 最新物料区域 -->
-
-&#x3C;section id=&#x22;news&#x22; class=&#x22;py-20 relative overflow-hidden&#x22;&#x3E;
-  &#x3C;!-- &#x80CC;&#x666F;&#x6548;&#x679C; --&#x3E;
-  &#x3C;div class=&#x22;absolute inset-0 bg-grid z-0&#x22;&#x3E;&#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;absolute inset-0 bg-gradient-to-br from-lightBg via-lightBg/90 to-mintGreen/20 z-10&#x22;&#x3E;&#x3C;/div&#x3E;
-
-  <!-- 装饰元素 -->
-
-  &#x3C;div class=&#x22;absolute top-1/4 right-10 w-32 h-32 bg-softPurple/30 rounded-full blur-3xl animate-pulse-slow&#x22;&#x3E;&#x3C;/div&#x3E;
-
-  <!-- 内容 -->
-
-  &#x3C;div class=&#x22;container mx-auto px-6 md:px-12 relative z-20&#x22;&#x3E;
-    &#x3C;div class=&#x22;text-center mb-16&#x22;&#x3E;
-      &#x3C;h2 class=&#x22;text-[clamp(2rem,4vw,3rem)] font-bold font-comic mb-4&#x22;&#x3E;
-        &#x3C;span class=&#x22;text-glow&#x22;&#x3E;&#x56E2;&#x961F;&#x6700;&#x65B0;&#x7269;&#x6599;&#x3C;/span&#x3E;
-      &#x3C;/h2&#x3E;
-      &#x3C;p class=&#x22;text-lg text-gray-700 max-w-2xl mx-auto&#x22;&#x3E;
-        &#x63A2;&#x7D22;ENHYPEN&#x7684;&#x6700;&#x65B0;&#x5B98;&#x65B9;&#x7269;&#x6599;&#x3001;&#x5E55;&#x540E;&#x82B1;&#x7D6E;&#x548C;&#x7CBE;&#x5F69;&#x77AC;&#x95F4;
-      &#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-
-    <!-- 物料卡片网格 -->
-
-    &#x3C;div class=&#x22;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8&#x22;&#x3E;
-      &#x3C;!-- &#x7269;&#x6599;&#x5361;&#x7247;1 --&#x3E;
-      &#x3C;div class=&#x22;bg-white/80 rounded-lg overflow-hidden pixel-border group hover:shadow-lg hover:shadow-softPink/30 transition-all duration-300 transform hover:-translate-y-2&#x22;&#x3E;
-        &#x3C;div class=&#x22;relative&#x22;&#x3E;
-          &#x3C;img src=&#x22;https://picsum.photos/seed/enhypen1/600/400&#x22; alt=&#x22;ENHYPEN&#x7269;&#x6599;&#x56FE;&#x7247;&#x22; class=&#x22;w-full h-56 object-cover&#x22;&#x3E;
-          &#x3C;div class=&#x22;absolute top-4 left-4 bg-softPink text-darkBg font-bold px-3 py-1 rounded&#x22;&#x3E;
-            &#x5B98;&#x65B9;&#x7269;&#x6599;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;p-6&#x22;&#x3E;
-          &#x3C;h3 class=&#x22;text-xl font-bold mb-2 group-hover:text-softPink transition-colors duration-300&#x22;&#x3E;2023 SEASON&#x27;S GREETINGS &#x82B1;&#x7D6E;&#x3C;/h3&#x3E;
-          &#x3C;p class=&#x22;text-gray-600 mb-4&#x22;&#x3E;&#x63A2;&#x7D22;ENHYPEN&#x6210;&#x5458;&#x4EEC;&#x5728;&#x62CD;&#x6444;2023 SEASON&#x27;S GREETINGS&#x65F6;&#x7684;&#x5E55;&#x540E;&#x6545;&#x4E8B;&#x548C;&#x6709;&#x8DA3;&#x77AC;&#x95F4;&#x3002;&#x3C;/p&#x3E;
-          &#x3C;div class=&#x22;flex justify-between items-center&#x22;&#x3E;
-            &#x3C;span class=&#x22;text-sm text-gray-500&#x22;&#x3E;&#x53D1;&#x5E03;&#x4E8E; 2023-01-15&#x3C;/span&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;text-babyBlue hover:text-softPink transition-colors duration-300 font-medium flex items-center&#x22;&#x3E;
-              &#x67E5;&#x770B;&#x8BE6;&#x60C5; &#x3C;i class=&#x22;fa fa-arrow-right ml-2&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/a&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-
-      <!-- 物料卡片2 -->
-
-      &#x3C;div class=&#x22;bg-white/80 rounded-lg overflow-hidden pixel-border group hover:shadow-lg hover:shadow-mintGreen/30 transition-all duration-300 transform hover:-translate-y-2&#x22;&#x3E;
-        &#x3C;div class=&#x22;relative&#x22;&#x3E;
-          &#x3C;img src=&#x22;https://picsum.photos/seed/enhypen2/600/400&#x22; alt=&#x22;ENHYPEN&#x7269;&#x6599;&#x56FE;&#x7247;&#x22; class=&#x22;w-full h-56 object-cover&#x22;&#x3E;
-          &#x3C;div class=&#x22;absolute top-4 left-4 bg-mintGreen text-darkBg font-bold px-3 py-1 rounded&#x22;&#x3E;
-            &#x7EC3;&#x4E60;&#x5BA4;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;p-6&#x22;&#x3E;
-          &#x3C;h3 class=&#x22;text-xl font-bold mb-2 group-hover:text-mintGreen transition-colors duration-300&#x22;&#x3E;Tamed-Dashed &#x821E;&#x8E48;&#x7EC3;&#x4E60;&#x5BA4;&#x89C6;&#x9891;&#x3C;/h3&#x3E;
-          &#x3C;p class=&#x22;text-gray-600 mb-4&#x22;&#x3E;&#x8FD1;&#x8DDD;&#x79BB;&#x89C2;&#x770B;ENHYPEN&#x5B8C;&#x7F8E;&#x6F14;&#x7ECE;Tamed-Dashed&#x7684;&#x821E;&#x8E48;&#x7EC3;&#x4E60;&#x5BA4;&#x7248;&#x672C;&#x3002;&#x3C;/p&#x3E;
-          &#x3C;div class=&#x22;flex justify-between items-center&#x22;&#x3E;
-            &#x3C;span class=&#x22;text-sm text-gray-500&#x22;&#x3E;&#x53D1;&#x5E03;&#x4E8E; 2023-03-22&#x3C;/span&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;text-babyBlue hover:text-mintGreen transition-colors duration-300 font-medium flex items-center&#x22;&#x3E;
-              &#x67E5;&#x770B;&#x8BE6;&#x60C5; &#x3C;i class=&#x22;fa fa-arrow-right ml-2&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/a&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-
-      <!-- 物料卡片3 -->
-
-      &#x3C;div class=&#x22;bg-white/80 rounded-lg overflow-hidden pixel-border group hover:shadow-lg hover:shadow-softPurple/30 transition-all duration-300 transform hover:-translate-y-2&#x22;&#x3E;
-        &#x3C;div class=&#x22;relative&#x22;&#x3E;
-          &#x3C;img src=&#x22;https://picsum.photos/seed/enhypen3/600/400&#x22; alt=&#x22;ENHYPEN&#x7269;&#x6599;&#x56FE;&#x7247;&#x22; class=&#x22;w-full h-56 object-cover&#x22;&#x3E;
-          &#x3C;div class=&#x22;absolute top-4 left-4 bg-softPurple text-darkBg font-bold px-3 py-1 rounded&#x22;&#x3E;
-            &#x7EAA;&#x5F55;&#x7247;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;p-6&#x22;&#x3E;
-          &#x3C;h3 class=&#x22;text-xl font-bold mb-2 group-hover:text-softPurple transition-colors duration-300&#x22;&#x3E;ENHYPEN: Beyond the Story &#x7EAA;&#x5F55;&#x7247;&#x3C;/h3&#x3E;
-          &#x3C;p class=&#x22;text-gray-600 mb-4&#x22;&#x3E;&#x6DF1;&#x5165;&#x4E86;&#x89E3;ENHYPEN&#x4ECE;&#x7EC3;&#x4E60;&#x751F;&#x5230;&#x6B63;&#x5F0F;&#x51FA;&#x9053;&#x7684;&#x5168;&#x8FC7;&#x7A0B;&#x548C;&#x80CC;&#x540E;&#x7684;&#x6545;&#x4E8B;&#x3002;&#x3C;/p&#x3E;
-          &#x3C;div class=&#x22;flex justify-between items-center&#x22;&#x3E;
-            &#x3C;span class=&#x22;text-sm text-gray-500&#x22;&#x3E;&#x53D1;&#x5E03;&#x4E8E; 2023-05-10&#x3C;/span&#x3E;
-            &#x3C;a href=&#x22;#&#x22; class=&#x22;text-babyBlue hover:text-softPurple transition-colors duration-300 font-medium flex items-center&#x22;&#x3E;
-              &#x67E5;&#x770B;&#x8BE6;&#x60C5; &#x3C;i class=&#x22;fa fa-arrow-right ml-2&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/a&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-
-    <!-- 查看更多按钮 -->
-
-    &#x3C;div class=&#x22;text-center mt-12&#x22;&#x3E;
-      &#x3C;a href=&#x22;#&#x22; class=&#x22;inline-block px-8 py-3 bg-transparent border-2 border-softPurple rounded-lg text-darkBg font-bold hover:bg-softPurple/10 transition-all duration-300 transform hover:-translate-y-1&#x22;&#x3E;
-        &#x67E5;&#x770B;&#x66F4;&#x591A;&#x7269;&#x6599; &#x3C;i class=&#x22;fa fa-angle-double-right ml-2&#x22;&#x3E;&#x3C;/i&#x3E;
-      &#x3C;/a&#x3E;
-    &#x3C;/div&#x3E;
-  &#x3C;/div&#x3E;
-&#x3C;/section&#x3E;
-
-<!-- 新歌MV区域 -->
-
-&#x3C;section id=&#x22;mv&#x22; class=&#x22;py-20 relative overflow-hidden&#x22;&#x3E;
-  &#x3C;!-- &#x80CC;&#x666F;&#x6548;&#x679C; --&#x3E;
-  &#x3C;div class=&#x22;absolute inset-0 bg-grid z-0&#x22;&#x3E;&#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;absolute inset-0 bg-gradient-to-br from-lightBg via-lightBg/90 to-babyBlue/20 z-10&#x22;&#x3E;&#x3C;/div&#x3E;
-
-  <!-- 装饰元素 -->
-
-  &#x3C;div class=&#x22;absolute top-1/4 left-10 w-40 h-40 bg-lemonYellow/30 rounded-full blur-3xl animate-pulse-slow&#x22;&#x3E;&#x3C;/div&#x3E;
-
-  <!-- 内容 -->
-
-  &#x3C;div class=&#x22;container mx-auto px-6 md:px-12 relative z-20&#x22;&#x3E;
-    &#x3C;div class=&#x22;text-center mb-16&#x22;&#x3E;
-      &#x3C;h2 class=&#x22;text-[clamp(2rem,4vw,3rem)] font-bold font-comic mb-4&#x22;&#x3E;
-        &#x3C;span class=&#x22;text-glow&#x22;&#x3E;&#x65B0;&#x6B4C;MV&#x3C;/span&#x3E;
-      &#x3C;/h2&#x3E;
-      &#x3C;p class=&#x22;text-lg text-gray-700 max-w-2xl mx-auto&#x22;&#x3E;
-        &#x6B23;&#x8D4F;ENHYPEN&#x7684;&#x6700;&#x65B0;&#x97F3;&#x4E50;&#x89C6;&#x9891;&#x548C;&#x7CBE;&#x5F69;&#x821E;&#x53F0;&#x8868;&#x6F14;
-      &#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-
-    <!-- 主MV -->
-
-    &#x3C;div class=&#x22;max-w-4xl mx-auto mb-16&#x22;&#x3E;
-      &#x3C;div class=&#x22;relative bg-white/80 rounded-lg overflow-hidden pixel-border group hover:shadow-lg hover:shadow-babyBlue/30 transition-all duration-300&#x22;&#x3E;
-        &#x3C;!-- &#x89C6;&#x9891;&#x5C01;&#x9762; --&#x3E;
-        &#x3C;div class=&#x22;relative aspect-video&#x22;&#x3E;
-          &#x3C;img src=&#x22;https://picsum.photos/seed/enhypen-mv/1200/675&#x22; alt=&#x22;ENHYPEN&#x6700;&#x65B0;MV&#x5C01;&#x9762;&#x22; class=&#x22;w-full h-full object-cover&#x22;&#x3E;
-          &#x3C;!-- &#x64AD;&#x653E;&#x6309;&#x94AE; --&#x3E;
-          &#x3C;div class=&#x22;absolute inset-0 flex items-center justify-center&#x22;&#x3E;
-            &#x3C;div class=&#x22;w-20 h-20 md:w-24 md:h-24 rounded-full bg-babyBlue/80 flex items-center justify-center cursor-pointer group-hover:bg-babyBlue transition-all duration-300 transform group-hover:scale-110&#x22;&#x3E;
-              &#x3C;i class=&#x22;fa fa-play text-2xl md:text-3xl text-darkBg&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-          &#x3C;/div&#x3E;
-          &#x3C;!-- &#x89C6;&#x9891;&#x4FE1;&#x606F; --&#x3E;
-          &#x3C;div class=&#x22;absolute bottom-0 left-0 right-0 bg-gradient-to-t from-darkBg/80 to-transparent p-6&#x22;&#x3E;
-            &#x3C;span class=&#x22;inline-block px-3 py-1 bg-babyBlue text-darkBg font-bold rounded mb-2&#x22;&#x3E;&#x6700;&#x65B0;MV&#x3C;/span&#x3E;
-            &#x3C;h3 class=&#x22;text-2xl md:text-3xl font-bold mb-1 text-white&#x22;&#x3E;Bad Desire (With or Without You)&#x3C;/h3&#x3E;
-            &#x3C;p class=&#x22;text-gray-200&#x22;&#x3E;&#x53D1;&#x5E03;&#x4E8E; 2023-07-15 | 10,245,879 &#x6B21;&#x89C2;&#x770B;&#x3C;/p&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-
-    <!-- MV列表 -->
-
-    &#x3C;div class=&#x22;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6&#x22;&#x3E;
-      &#x3C;!-- MV 1 --&#x3E;
-      &#x3C;div class=&#x22;bg-white/80 rounded-lg overflow-hidden pixel-border group hover:shadow-lg hover:shadow-mintGreen/30 transition-all duration-300 transform hover:-translate-y-2&#x22;&#x3E;
-        &#x3C;div class=&#x22;relative aspect-video&#x22;&#x3E;
-          &#x3C;img src=&#x22;https://picsum.photos/seed/enhypen-mv1/600/338&#x22; alt=&#x22;ENHYPEN MV&#x5C01;&#x9762;&#x22; class=&#x22;w-full h-full object-cover&#x22;&#x3E;
-          &#x3C;div class=&#x22;absolute inset-0 flex items-center justify-center&#x22;&#x3E;
-            &#x3C;div class=&#x22;w-12 h-12 rounded-full bg-mintGreen/80 flex items-center justify-center cursor-pointer group-hover:bg-mintGreen transition-all duration-300 transform group-hover:scale-110&#x22;&#x3E;
-              &#x3C;i class=&#x22;fa fa-play text-darkBg&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;p-4&#x22;&#x3E;
-          &#x3C;h3 class=&#x22;text-lg font-bold mb-1 group-hover:text-mintGreen transition-colors duration-300&#x22;&#x3E;Tamed-Dashed&#x3C;/h3&#x3E;
-          &#x3C;p class=&#x22;text-sm text-gray-600&#x22;&#x3E;&#x53D1;&#x5E03;&#x4E8E; 2022-11-21 | 8,754,321 &#x6B21;&#x89C2;&#x770B;&#x3C;/p&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-
-      <!-- MV 2 -->
-
-      &#x3C;div class=&#x22;bg-white/80 rounded-lg overflow-hidden pixel-border group hover:shadow-lg hover:shadow-softPurple/30 transition-all duration-300 transform hover:-translate-y-2&#x22;&#x3E;
-        &#x3C;div class=&#x22;relative aspect-video&#x22;&#x3E;
-          &#x3C;img src=&#x22;https://picsum.photos/seed/enhypen-mv2/600/338&#x22; alt=&#x22;ENHYPEN MV&#x5C01;&#x9762;&#x22; class=&#x22;w-full h-full object-cover&#x22;&#x3E;
-          &#x3C;div class=&#x22;absolute inset-0 flex items-center justify-center&#x22;&#x3E;
-            &#x3C;div class=&#x22;w-12 h-12 rounded-full bg-softPurple/80 flex items-center justify-center cursor-pointer group-hover:bg-softPurple transition-all duration-300 transform group-hover:scale-110&#x22;&#x3E;
-              &#x3C;i class=&#x22;fa fa-play text-darkBg&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;p-4&#x22;&#x3E;
-          &#x3C;h3 class=&#x22;text-lg font-bold mb-1 group-hover:text-softPurple transition-colors duration-300&#x22;&#x3E;Fever&#x3C;/h3&#x3E;
-          &#x3C;p class=&#x22;text-sm text-gray-600&#x22;&#x3E;&#x53D1;&#x5E03;&#x4E8E; 2022-07-04 | 12,345,678 &#x6B21;&#x89C2;&#x770B;&#x3C;/p&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-
-      <!-- MV 3 -->
-
-      &#x3C;div class=&#x22;bg-white/80 rounded-lg overflow-hidden pixel-border group hover:shadow-lg hover:shadow-lemonYellow/30 transition-all duration-300 transform hover:-translate-y-2&#x22;&#x3E;
-        &#x3C;div class=&#x22;relative aspect-video&#x22;&#x3E;
-          &#x3C;img src=&#x22;https://picsum.photos/seed/enhypen-mv3/600/338&#x22; alt=&#x22;ENHYPEN MV&#x5C01;&#x9762;&#x22; class=&#x22;w-full h-full object-cover&#x22;&#x3E;
-          &#x3C;div class=&#x22;absolute inset-0 flex items-center justify-center&#x22;&#x3E;
-            &#x3C;div class=&#x22;w-12 h-12 rounded-full bg-lemonYellow/80 flex items-center justify-center cursor-pointer group-hover:bg-lemonYellow transition-all duration-300 transform group-hover:scale-110&#x22;&#x3E;
-              &#x3C;i class=&#x22;fa fa-play text-darkBg&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;p-4&#x22;&#x3E;
-          &#x3C;h3 class=&#x22;text-lg font-bold mb-1 group-hover:text-lemonYellow transition-colors duration-300&#x22;&#x3E;Drunk-Dazed&#x3C;/h3&#x3E;
-          &#x3C;p class=&#x22;text-sm text-gray-600&#x22;&#x3E;&#x53D1;&#x5E03;&#x4E8E; 2021-11-29 | 15,678,901 &#x6B21;&#x89C2;&#x770B;&#x3C;/p&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-
-    <!-- 查看更多按钮 -->
-
-    &#x3C;div class=&#x22;text-center mt-12&#x22;&#x3E;
-      &#x3C;a href=&#x22;#&#x22; class=&#x22;inline-block px-8 py-3 bg-transparent border-2 border-babyBlue rounded-lg text-darkBg font-bold hover:bg-babyBlue/10 transition-all duration-300 transform hover:-translate-y-1&#x22;&#x3E;
-        &#x67E5;&#x770B;&#x66F4;&#x591A;MV &#x3C;i class=&#x22;fa fa-angle-double-right ml-2&#x22;&#x3E;&#x3C;/i&#x3E;
-      &#x3C;/a&#x3E;
-    &#x3C;/div&#x3E;
-  &#x3C;/div&#x3E;
-&#x3C;/section&#x3E;
-
-<!-- 最新动向区域 -->
-
-&#x3C;section id=&#x22;updates&#x22; class=&#x22;py-20 relative overflow-hidden&#x22;&#x3E;
-  &#x3C;!-- &#x80CC;&#x666F;&#x6548;&#x679C; --&#x3E;
-  &#x3C;div class=&#x22;absolute inset-0 bg-grid z-0&#x22;&#x3E;&#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;absolute inset-0 bg-gradient-to-br from-lightBg via-lightBg/90 to-softPurple/20 z-10&#x22;&#x3E;&#x3C;/div&#x3E;
-
-  <!-- 装饰元素 -->
-
-  &#x3C;div class=&#x22;absolute top-1/4 right-10 w-32 h-32 bg-softPink/30 rounded-full blur-3xl animate-pulse-slow&#x22;&#x3E;&#x3C;/div&#x3E;
-
-  <!-- 内容 -->
-
-  &#x3C;div class=&#x22;container mx-auto px-6 md:px-12 relative z-20&#x22;&#x3E;
-    &#x3C;div class=&#x22;text-center mb-16&#x22;&#x3E;
-      &#x3C;h2 class=&#x22;text-[clamp(2rem,4vw,3rem)] font-bold font-comic mb-4&#x22;&#x3E;
-        &#x3C;span class=&#x22;text-glow&#x22;&#x3E;&#x6700;&#x65B0;&#x52A8;&#x5411;&#x3C;/span&#x3E;
-      &#x3C;/h2&#x3E;
-      &#x3C;p class=&#x22;text-lg text-gray-700 max-w-2xl mx-auto&#x22;&#x3E;
-        &#x4E86;&#x89E3;&#x6734;&#x7EFC;&#x661F;&#x7684;&#x6700;&#x65B0;&#x6D3B;&#x52A8;&#x3001;&#x884C;&#x7A0B;&#x548C;&#x4E2A;&#x4EBA;&#x52A8;&#x6001;
-      &#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-
-    <!-- 动向时间线 -->
-
-    &#x3C;div class=&#x22;relative max-w-4xl mx-auto&#x22;&#x3E;
-      &#x3C;!-- &#x65F6;&#x95F4;&#x7EBF;&#x4E2D;&#x5FC3;&#x7EBF; --&#x3E;
-      &#x3C;div class=&#x22;absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-softPink via-babyBlue to-softPurple&#x22;&#x3E;&#x3C;/div&#x3E;
-
-      <!-- 动向项目1 -->
-
-      &#x3C;div class=&#x22;relative mb-16 flex items-center justify-between&#x22;&#x3E;
-        &#x3C;div class=&#x22;hidden md:block w-1/2 pr-12 text-right&#x22;&#x3E;
-          &#x3C;div class=&#x22;bg-white/80 p-6 rounded-lg pixel-border&#x22;&#x3E;
-            &#x3C;h3 class=&#x22;text-xl font-bold mb-2&#x22;&#x3E;&#x51FA;&#x5E2D;PRADA 2025&#x6625;&#x590F;&#x5927;&#x79C0;&#x3C;/h3&#x3E;
-            &#x3C;p class=&#x22;text-gray-600 mb-3&#x22;&#x3E;&#x6734;&#x7EFC;&#x661F;&#x4EE5;&#x5609;&#x5BBE;&#x8EAB;&#x4EFD;&#x51FA;&#x5E2D;&#x4E86;&#x5728;&#x5DF4;&#x9ECE;&#x4E3E;&#x884C;&#x7684;PRADA 2025&#x6625;&#x590F;&#x7CFB;&#x5217;&#x65F6;&#x88C5;&#x79C0;&#xFF0C;&#x5C55;&#x73B0;&#x4E86;&#x72EC;&#x7279;&#x7684;&#x65F6;&#x5C1A;&#x54C1;&#x5473;&#x3002;&#x3C;/p&#x3E;
-            &#x3C;span class=&#x22;text-sm text-softPink font-medium&#x22;&#x3E;2025&#x5E74;1&#x6708;15&#x65E5;&#x3C;/span&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;w-8 h-8 bg-softPink rounded-full z-10 border-4 border-lightBg&#x22;&#x3E;&#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;md:hidden w-full mt-4&#x22;&#x3E;
-          &#x3C;div class=&#x22;bg-white/80 p-6 rounded-lg pixel-border&#x22;&#x3E;
-            &#x3C;h3 class=&#x22;text-xl font-bold mb-2&#x22;&#x3E;&#x51FA;&#x5E2D;PRADA 2025&#x6625;&#x590F;&#x5927;&#x79C0;&#x3C;/h3&#x3E;
-            &#x3C;p class=&#x22;text-gray-600 mb-3&#x22;&#x3E;&#x6734;&#x7EFC;&#x661F;&#x4EE5;&#x5609;&#x5BBE;&#x8EAB;&#x4EFD;&#x51FA;&#x5E2D;&#x4E86;&#x5728;&#x5DF4;&#x9ECE;&#x4E3E;&#x884C;&#x7684;PRADA 2025&#x6625;&#x590F;&#x7CFB;&#x5217;&#x65F6;&#x88C5;&#x79C0;&#xFF0C;&#x5C55;&#x73B0;&#x4E86;&#x72EC;&#x7279;&#x7684;&#x65F6;&#x5C1A;&#x54C1;&#x5473;&#x3002;&#x3C;/p&#x3E;
-            &#x3C;span class=&#x22;text-sm text-softPink font-medium&#x22;&#x3E;2025&#x5E74;1&#x6708;15&#x65E5;&#x3C;/span&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-
-      <!-- 动向项目2 -->
-
-      &#x3C;div class=&#x22;relative mb-16 flex items-center justify-between&#x22;&#x3E;
-        &#x3C;div class=&#x22;md:hidden w-full mb-4&#x22;&#x3E;
-          &#x3C;div class=&#x22;bg-white/80 p-6 rounded-lg pixel-border&#x22;&#x3E;
-            &#x3C;h3 class=&#x22;text-xl font-bold mb-2&#x22;&#x3E;&#x4E2A;&#x4EBA;Instagram&#x66F4;&#x65B0;&#x3C;/h3&#x3E;
-            &#x3C;p class=&#x22;text-gray-600 mb-3&#x22;&#x3E;&#x6734;&#x7EFC;&#x661F;&#x5728;Instagram&#x4E0A;&#x5206;&#x4EAB;&#x4E86;&#x4E00;&#x5F20;&#x81EA;&#x5DF1;&#x7684;&#x7167;&#x7247;&#xFF0C;&#x5E76;&#x9644;&#x6587;&#xFF1A;&#x22;&#x611F;&#x8C22;&#x7C89;&#x4E1D;&#x4EEC;&#x4E00;&#x76F4;&#x4EE5;&#x6765;&#x7684;&#x652F;&#x6301;&#xFF01;&#x22;&#x3C;/p&#x3E;
-            &#x3C;span class=&#x22;text-sm text-babyBlue font-medium&#x22;&#x3E;2025&#x5E74;1&#x6708;8&#x65E5;&#x3C;/span&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;w-8 h-8 bg-babyBlue rounded-full z-10 border-4 border-lightBg&#x22;&#x3E;&#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;hidden md:block w-1/2 pl-12&#x22;&#x3E;
-          &#x3C;div class=&#x22;bg-white/80 p-6 rounded-lg pixel-border&#x22;&#x3E;
-            &#x3C;h3 class=&#x22;text-xl font-bold mb-2&#x22;&#x3E;&#x4E2A;&#x4EBA;Instagram&#x66F4;&#x65B0;&#x3C;/h3&#x3E;
-            &#x3C;p class=&#x22;text-gray-600 mb-3&#x22;&#x3E;&#x6734;&#x7EFC;&#x661F;&#x5728;Instagram&#x4E0A;&#x5206;&#x4EAB;&#x4E86;&#x4E00;&#x5F20;&#x81EA;&#x5DF1;&#x7684;&#x7167;&#x7247;&#xFF0C;&#x5E76;&#x9644;&#x6587;&#xFF1A;&#x22;&#x611F;&#x8C22;&#x7C89;&#x4E1D;&#x4EEC;&#x4E00;&#x76F4;&#x4EE5;&#x6765;&#x7684;&#x652F;&#x6301;&#xFF01;&#x22;&#x3C;/p&#x3E;
-            &#x3C;span class=&#x22;text-sm text-babyBlue font-medium&#x22;&#x3E;2025&#x5E74;1&#x6708;8&#x65E5;&#x3C;/span&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-
-      <!-- 动向项目3 -->
-
-      &#x3C;div class=&#x22;relative mb-16 flex items-center justify-between&#x22;&#x3E;
-        &#x3C;div class=&#x22;hidden md:block w-1/2 pr-12 text-right&#x22;&#x3E;
-          &#x3C;div class=&#x22;bg-white/80 p-6 rounded-lg pixel-border&#x22;&#x3E;
-            &#x3C;h3 class=&#x22;text-xl font-bold mb-2&#x22;&#x3E;&#x53C2;&#x52A0;ENHYPEN&#x65B0;&#x4E13;&#x8F91;&#x5F55;&#x5236;&#x3C;/h3&#x3E;
-            &#x3C;p class=&#x22;text-gray-600 mb-3&#x22;&#x3E;&#x6734;&#x7EFC;&#x661F;&#x53C2;&#x4E0E;&#x4E86;ENHYPEN&#x65B0;&#x4E13;&#x8F91;&#x7684;&#x5F55;&#x5236;&#x5DE5;&#x4F5C;&#xFF0C;&#x7C89;&#x4E1D;&#x4EEC;&#x671F;&#x5F85;&#x65B0;&#x4E13;&#x8F91;&#x80FD;&#x65E9;&#x65E5;&#x53D1;&#x884C;&#x3002;&#x3C;/p&#x3E;
-            &#x3C;span class=&#x22;text-sm text-softPurple font-medium&#x22;&#x3E;2025&#x5E74;1&#x6708;2&#x65E5;&#x3C;/span&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;w-8 h-8 bg-softPurple rounded-full z-10 border-4 border-lightBg&#x22;&#x3E;&#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;md:hidden w-full mt-4&#x22;&#x3E;
-          &#x3C;div class=&#x22;bg-white/80 p-6 rounded-lg pixel-border&#x22;&#x3E;
-            &#x3C;h3 class=&#x22;text-xl font-bold mb-2&#x22;&#x3E;&#x53C2;&#x52A0;ENHYPEN&#x65B0;&#x4E13;&#x8F91;&#x5F55;&#x5236;&#x3C;/h3&#x3E;
-            &#x3C;p class=&#x22;text-gray-600 mb-3&#x22;&#x3E;&#x6734;&#x7EFC;&#x661F;&#x53C2;&#x4E0E;&#x4E86;ENHYPEN&#x65B0;&#x4E13;&#x8F91;&#x7684;&#x5F55;&#x5236;&#x5DE5;&#x4F5C;&#xFF0C;&#x7C89;&#x4E1D;&#x4EEC;&#x671F;&#x5F85;&#x65B0;&#x4E13;&#x8F91;&#x80FD;&#x65E9;&#x65E5;&#x53D1;&#x884C;&#x3002;&#x3C;/p&#x3E;
-            &#x3C;span class=&#x22;text-sm text-softPurple font-medium&#x22;&#x3E;2025&#x5E74;1&#x6708;2&#x65E5;&#x3C;/span&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-
-      <!-- 动向项目4 -->
-
-      &#x3C;div class=&#x22;relative flex items-center justify-between&#x22;&#x3E;
-        &#x3C;div class=&#x22;md:hidden w-full mb-4&#x22;&#x3E;
-          &#x3C;div class=&#x22;bg-white/80 p-6 rounded-lg pixel-border&#x22;&#x3E;
-            &#x3C;h3 class=&#x22;text-xl font-bold mb-2&#x22;&#x3E;&#x751F;&#x65E5;&#x5E86;&#x795D;&#x6D3B;&#x52A8;&#x3C;/h3&#x3E;
-            &#x3C;p class=&#x22;text-gray-600 mb-3&#x22;&#x3E;&#x6734;&#x7EFC;&#x661F;&#x4E0E;&#x7C89;&#x4E1D;&#x4EEC;&#x4E00;&#x8D77;&#x5E86;&#x795D;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x751F;&#x65E5;&#xFF0C;&#x73B0;&#x573A;&#x6C14;&#x6C1B;&#x70ED;&#x70C8;&#xFF0C;&#x5145;&#x6EE1;&#x4E86;&#x7231;&#x4E0E;&#x6E29;&#x6696;&#x3002;&#x3C;/p&#x3E;
-            &#x3C;span class=&#x22;text-sm text-lemonYellow font-medium&#x22;&#x3E;2024&#x5E74;12&#x6708;23&#x65E5;&#x3C;/span&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;w-8 h-8 bg-lemonYellow rounded-full z-10 border-4 border-lightBg&#x22;&#x3E;&#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;hidden md:block w-1/2 pl-12&#x22;&#x3E;
-          &#x3C;div class=&#x22;bg-white/80 p-6 rounded-lg pixel-border&#x22;&#x3E;
-            &#x3C;h3 class=&#x22;text-xl font-bold mb-2&#x22;&#x3E;&#x751F;&#x65E5;&#x5E86;&#x795D;&#x6D3B;&#x52A8;&#x3C;/h3&#x3E;
-            &#x3C;p class=&#x22;text-gray-600 mb-3&#x22;&#x3E;&#x6734;&#x7EFC;&#x661F;&#x4E0E;&#x7C89;&#x4E1D;&#x4EEC;&#x4E00;&#x8D77;&#x5E86;&#x795D;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x751F;&#x65E5;&#xFF0C;&#x73B0;&#x573A;&#x6C14;&#x6C1B;&#x70ED;&#x70C8;&#xFF0C;&#x5145;&#x6EE1;&#x4E86;&#x7231;&#x4E0E;&#x6E29;&#x6696;&#x3002;&#x3C;/p&#x3E;
-            &#x3C;span class=&#x22;text-sm text-lemonYellow font-medium&#x22;&#x3E;2024&#x5E74;12&#x6708;23&#x65E5;&#x3C;/span&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-
-    <!-- 查看更多按钮 -->
-
-    &#x3C;div class=&#x22;text-center mt-16&#x22;&#x3E;
-      &#x3C;a href=&#x22;#&#x22; class=&#x22;inline-block px-8 py-3 bg-transparent border-2 border-softPurple rounded-lg text-darkBg font-bold hover:bg-softPurple/10 transition-all duration-300 transform hover:-translate-y-1&#x22;&#x3E;
-        &#x67E5;&#x770B;&#x66F4;&#x591A;
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朴综星 (JAY) - ENHYPEN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --softPink: #ff9ecb;
+            --mintGreen: #6de6d8;
+            --babyBlue: #8fd3ff;
+            --lemonYellow: #fff78a;
+            --softPurple: #c6a6ff;
+            --darkBg: #1a1a2e;
+            --lightBg: #f9f7ff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e0d6ff, #ffd6e7);
+            color: var(--darkBg);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="20" cy="20" r="3" fill="%23ff9ecb" opacity="0.3"/><circle cx="50" cy="50" r="2" fill="%238fd3ff" opacity="0.3"/><circle cx="80" cy="30" r="4" fill="%23fff78a" opacity="0.3"/><circle cx="70" cy="70" r="3" fill="%23c6a6ff" opacity="0.3"/></svg>');
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+            position: relative;
+        }
+        
+        .pixel-border {
+            border: 4px solid var(--darkBg);
+            position: relative;
+            box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.1);
+        }
+        
+        .pixel-border::after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            right: 4px;
+            bottom: 4px;
+            border: 2px solid white;
+            pointer-events: none;
+        }
+        
+        /* 动画效果 */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 10px var(--softPink), 0 0 20px var(--babyBlue); }
+            50% { text-shadow: 0 0 20px var(--babyBlue), 0 0 30px var(--softPurple); }
+        }
+        
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        .text-glow {
+            animation: glow 2s ease-in-out infinite;
+        }
+        
+        .animate-pulse-slow {
+            animation: pulse-slow 4s ease-in-out infinite;
+        }
+        
+        /* 顶部横幅区域 */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--babyBlue), var(--softPink));
+            z-index: -1;
+            opacity: 0.8;
+        }
+        
+        .hero-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            color: rgba(26, 26, 46, 0.9);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, var(--softPink), var(--softPurple));
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 158, 203, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--babyBlue);
+            color: var(--darkBg);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(143, 211, 255, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        /* 物料区域 */
+        .material-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .material-card {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .material-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .material-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .material-content {
+            padding: 20px;
+        }
+        
+        .material-tag {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        /* MV区域 */
+        .mv-container {
+            margin-top: 40px;
+        }
+        
+        .main-mv {
+            max-width: 800px;
+            margin: 0 auto 60px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .mv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .mv-card {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .mv-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mv-thumb {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .mv-info {
+            padding: 15px;
+        }
+        
+        /* 时间线 */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--softPink), var(--babyBlue), var(--softPurple));
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 30px;
+            width: 50%;
+        }
+        
+        .timeline-item:nth-child(even) {
+            align-self: flex-end;
+            justify-content: flex-start;
+            padding-left: 30px;
+            padding-right: 0;
+            margin-left: 50%;
+        }
+        
+        .timeline-content {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            top: 20px;
+            right: -12px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 4px solid var(--lightBg);
+            z-index: 2;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -12px;
+            right: auto;
+        }
+        
+        /* 装饰元素 */
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.3;
+            filter: blur(40px);
+            z-index: 1;
+        }
+        
+        .bubble-1 {
+            top: 25%;
+            left: 10%;
+            width: 150px;
+            height: 150px;
+            background-color: var(--softPink);
+            animation: pulse-slow 6s infinite;
+        }
+        
+        .bubble-2 {
+            bottom: 25%;
+            right: 10%;
+            width: 180px;
+            height: 180px;
+            background-color: var(--mintGreen);
+            animation: pulse-slow 7s infinite 1s;
+        }
+        
+        .bubble-3 {
+            top: 15%;
+            right: 15%;
+            width: 120px;
+            height: 120px;
+            background-color: var(--softPurple);
+            animation: pulse-slow 5s infinite 0.5s;
+        }
+        
+        .bubble-4 {
+            bottom: 15%;
+            left: 15%;
+            width: 100px;
+            height: 100px;
+            background-color: var(--lemonYellow);
+            animation: pulse-slow 8s infinite 1.5s;
+        }
+        
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                text-align: center;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 0;
+                margin-left: 0;
+                justify-content: flex-start;
+            }
+            
+            .timeline-item:nth-child(even) .timeline-dot,
+            .timeline-dot {
+                left: 8px;
+                right: auto;
+            }
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        
+        .section-title p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: rgba(26, 26, 46, 0.85);
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        /* 页脚 */
+        footer {
+            background: var(--darkBg);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--softPink);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部横幅区域 -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        
+        <!-- 装饰气泡 -->
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="bubble bubble-4"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span>朴综星</span>
+                        <span class="text-glow">ENHYPEN</span>
+                    </h1>
+                    <p>
+                        朴综星（박종성、Park Jong Seong），艺名JAY，2002年4月20日出生于韩国首尔特别市，
+                        韩国流行乐男歌手、男子演唱组合ENHYPEN成员。
+                    </p>
+                    <div class="btn-group">
+                        <a href="#news" class="btn btn-primary">最新物料</a>
+                        <a href="#mv" class="btn btn-secondary">观看MV</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="pixel-border" style="max-width: 350px; border-radius: 8px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&w=400&ixid=MnwxfDB8MXxyYW5kb218MHx8a29yZWFuLGlkb2x8fHx8fHwxNjg1ODU4OTgx&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&utm_content=creditCopyText" alt="朴综星照片" class="animate-float" style="width: 100%; display: block;">
+                        
+                        <!-- 装饰标签 -->
+                        <div style="position: absolute; top: 20px; right: 20px; background: var(--lemonYellow); padding: 8px 15px; border-radius: 20px; font-weight: bold;">
+                            NEW
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 最新物料区域 -->
+    <section id="news" class="materials">
+        <div class="container">
+            <div class="section-title">
+                <h2><span class="text-glow">团队最新物料</span></h2>
+                <p>探索ENHYPEN的最新官方物料、幕后花絮和精彩瞬间</p>
+            </div>
+            
+            <div class="material-grid">
+                <!-- 物料卡片1 -->
+                <div class="material-card pixel-border">
+                    <img src="https://images.unsplash.com/photo-1599658880436-444c5a6f90ec?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&w=600&ixid=MnwxfDB8MXxyYW5kb218MHx8a29yZWFuLGlkb2x8fHx8fHwxNjg1ODU4OTgx&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&utm_content=creditCopyText" alt="ENHYPEN物料图片" class="material-img">
+                    <div class="material-content">
+                        <span class="material-tag" style="background: var(--softPink);">官方物料</span>
+                        <h3>2023 SEASON'S GREETINGS 花絮</h3>
+                        <p>探索ENHYPEN成员们在拍摄2023 SEASON'S GREETINGS时的幕后故事和有趣瞬间。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="date-badge" style="background: rgba(26, 26, 46, 0.1);">发布于 2023-01-15</span>
+                            <a href="#" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 物料卡片2 -->
+                <div class="material-card pixel-border">
+                    <img src="https://images.unsplash.com/photo-1627843563091-9ae5b71c5b3f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&w=600&ixid=MnwxfDB8MXxyYW5kb218MHx8a29yZWFuLGlkb2x8fHx8fHwxNjg1ODU4OTgx&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&utm_content=creditCopyText" alt="ENHYPEN物料图片" class="material-img">
+                    <div class="material-content">
+                        <span class="material-tag" style="background: var(--mintGreen);">练习室</span>
+                        <h3>Tamed-Dashed 舞蹈练习室视频</h3>
+                        <p>近距离观看ENHYPEN完美演绎Tamed-Dashed的舞蹈练习室版本。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="date-badge" style="background: rgba(26, 26, 46, 0.1);">发布于 2023-03-22</span>
+                            <a href="#" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 物料卡片3 -->
+                <div class="material-card pixel-border">
+                    <img src="https://images.unsplash.com/photo-1596727147705-61a532a659bd?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&w=600&ixid=MnwxfDB8MXxyYW5kb218MHx8a29yZWFuLGlkb2x8fHx8fHwxNjg1ODU4OTgx&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&utm_content=creditCopyText" alt="ENHYPEN物料图片" class="material-img">
+                    <div class="material-content">
+                        <span class="material-tag" style="background: var(--softPurple);">纪录片</span>
+                        <h3>ENHYPEN: Beyond the Story 纪录片</h3>
+                        <p>深入了解ENHYPEN从练习生到正式出道的全过程和背后的故事。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="date-badge" style="background: rgba(26, 26, 46, 0.1);">发布于 2023-05-10</span>
+                            <a href="#" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="btn-group">
+                <a href="#" class="btn btn-secondary">查看更多物料 <i class="fas fa-angle-double-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 新歌MV区域 -->
+    <section id="mv" class="mv-section" style="background: rgba(143, 211, 255, 0.1);">
+        <div class="container">
+            <div class="section-title">
+                <h2><span class="text-glow">新歌MV</span></h2>
+                <p>欣赏ENHYPEN的最新音乐视频和精彩舞台表演</p>
+            </div>
+            
+            <div class="mv-container">
+                <!-- 主MV -->
+                <div class="main-mv pixel-border">
+                    <div class="video-container">
+                        <iframe src="//player.bilibili.com/player.html?bvid=BV1dT421m7qD&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+                    </div>
+                    <div style="padding: 20px; text-align: center;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Bad Desire (With or Without You)</h3>
+                        <p style="color: rgba(26, 26, 46, 0.8);">发布于 2023-07-15 | 10,245,879 次观看</p>
+                    </div>
+                </div>
+                
+                <!-- MV列表 -->
+                <div class="mv-grid">
+                    <!-- MV 1 -->
+                    <div class="mv-card pixel-border">
+                        <a href="https://www.bilibili.com/video/BV1Hw411m7Jb" target="_blank">
+                            <img src="https://images.unsplash.com/photo-1634224143533-87b332baea97?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=338&w=600&ixid=MnwxfDB8MXxyYW5kb218MHx8a29yZWFuLGlkb2x8fHx8fHwxNjg1ODU4OTgx&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&utm_content=creditCopyText" alt="ENHYPEN MV封面" class="mv-thumb">
+                            <div class="mv-info">
+                                <h3>Tamed-Dashed</h3>
+                                <p style="color: rgba(26, 26, 46, 0.7); font-size: 0.9rem; margin-top: 5px;">发布于 2022-11-21 | 8,754,321 次观看</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- MV 2 -->
+                    <div class="mv-card pixel-border">
+                        <a href="https://www.bilibili.com/video/BV1Vb4y1s7Mf" target="_blank">
+                            <img src="https://images.unsplash.com/photo-1638893366588-35d8f00a7a0a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=338&w=600&ixid=MnwxfDB8MXxyYW5kb218MHx8a29yZWFuLGlkb2x8fHx8fHwxNjg1ODU4OTgx&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&utm_content=creditCopyText" alt="ENHYPEN MV封面" class="mv-thumb">
+                            <div class="mv-info">
+                                <h3>Fever</h3>
+                                <p style="color: rgba(26, 26, 46, 0.7); font-size: 0.9rem; margin-top: 5px;">发布于 2022-07-04 | 12,345,678 次观看</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- MV 3 -->
+                    <div class="mv-card pixel-border">
+                        <a href="https://www.bilibili.com/video/BV1Jb4y1s7Gk" target="_blank">
+                            <img src="https://images.unsplash.com/photo-1638261066850-6a1d1b04d3f2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=338&w=600&ixid=MnwxfDB8MXxyYW5kb218MHx8a29yZWFuLGlkb2x8fHx8fHwxNjg1ODU4OTgx&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&utm_content=creditCopyText" alt="ENHYPEN MV封面" class="mv-thumb">
+                            <div class="mv-info">
+                                <h3>Drunk-Dazed</h3>
+                                <p style="color: rgba(26, 26, 46, 0.7); font-size: 0.9rem; margin-top: 5px;">发布于 2021-11-29 | 15,678,901 次观看</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="btn-group">
+                    <a href="#" class="btn btn-secondary">查看更多MV <i class="fas fa-angle-double-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 最新动向区域 -->
+    <section id="updates" class="updates">
+        <div class="container">
+            <div class="section-title">
+                <h2><span class="text-glow">最新动向</span></h2>
+                <p>了解朴综星的最新活动、行程和个人动态</p>
+            </div>
+            
+            <div class="timeline">
+                <!-- 动向项目1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content pixel-border">
+                        <h3>出席PRADA 2025春夏大秀</h3>
+                        <p>朴综星以嘉宾身份出席了在巴黎举行的PRADA 2025春夏系列时装秀，展现了独特的时尚品味。</p>
+                        <span class="date-badge" style="background: var(--softPink);">2025年1月15日</span>
+                    </div>
+                    <div class="timeline-dot" style="background: var(--softPink);"></div>
+                </div>
+                
+                <!-- 动向项目2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content pixel-border">
+                        <h3>个人Instagram更新</h3>
+                        <p>朴综星在Instagram上分享了一张自己的照片，并附文："感谢粉丝们一直以来的支持！"</p>
+                        <span class="date-badge" style="background: var(--babyBlue);">2025年1月8日</span>
+                    </div>
+                    <div class="timeline-dot" style="background: var(--babyBlue);"></div>
+                </div>
+                
+                <!-- 动向项目3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content pixel-border">
+                        <h3>参与ENHYPEN新专辑录制</h3>
+                        <p>朴综星参与了ENHYPEN新专辑的录制工作，粉丝们期待新专辑能早日发行。</p>
+                        <span class="date-badge" style="background: var(--softPurple);">2025年1月2日</span>
+                    </div>
+                    <div class="timeline-dot" style="background: var(--softPurple);"></div>
+                </div>
+                
+                <!-- 动向项目4 -->
+                <div class="timeline-item">
+                    <div class="timeline-content pixel-border">
+                        <h3>生日庆祝活动</h3>
+                        <p>朴综星与粉丝们一起庆祝了自己的生日，现场气氛热烈，充满了爱与温暖。</p>
+                        <span class="date-badge" style="background: var(--lemonYellow); color: var(--darkBg);">2024年12月23日</span>
+                    </div>
+                    <div class="timeline-dot" style="background: var(--lemonYellow);"></div>
+                </div>
+            </div>
+            
+            <div class="btn-group">
+                <a href="#" class="btn btn-secondary">查看更多动态 <i class="fas fa-angle-double-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <h3 style="font-size: 1.8rem; margin-bottom: 20px;">朴综星 (JAY) - ENHYPEN</h3>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-weibo"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-bilibili"></i></a>
+            </div>
+            
+            <p>关注朴综星的官方社交媒体账号，获取最新动态</p>
+            
+            <div class="copyright">
+                © 2025 朴综星 (JAY) 中国粉丝站 | 本网站为粉丝创作，非官方
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
