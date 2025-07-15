@@ -63,6 +63,9 @@
             overflow: hidden;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         
         .news-card:hover {
@@ -107,7 +110,8 @@
         .news-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            background: #f0f4f9;
             transition: transform 0.5s ease;
         }
         
@@ -129,6 +133,10 @@
         .news-links {
             padding: 20px;
             background: #f8f9fa;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         
         .link-item {
@@ -152,6 +160,7 @@
         }
         
         .link-icon {
+            flex-shrink: 0;
             width: 40px;
             height: 40px;
             display: flex;
@@ -166,6 +175,7 @@
         
         .link-content {
             flex: 1;
+            min-width: 0;
         }
         
         .link-title {
@@ -177,11 +187,10 @@
         .link-url {
             font-size: 0.85rem;
             color: #666;
-            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
             display: block;
-            max-width: 250px;
+            white-space: nowrap;
         }
         
         .link-button {
@@ -195,6 +204,9 @@
             transition: background 0.3s;
             min-width: 80px;
             text-align: center;
+            text-decoration: none;
+            display: block;
+            flex-shrink: 0;
         }
         
         .link-button:hover {
@@ -230,6 +242,55 @@
             .news-title {
                 font-size: 1.2rem;
             }
+            
+            .link-button {
+                padding: 8px 12px;
+                min-width: 70px;
+            }
+        }
+        
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .search-box {
+            display: flex;
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        .search-box input {
+            flex: 1;
+            padding: 12px 20px;
+            border: 2px solid #3a6ac7;
+            border-radius: 50px 0 0 50px;
+            font-size: 1rem;
+            outline: none;
+        }
+        
+        .search-box button {
+            background: #3a6ac7;
+            color: white;
+            border: none;
+            padding: 0 25px;
+            border-radius: 0 50px 50px 0;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .search-box button:hover {
+            background: #2a5298;
+        }
+        
+        .empty-message {
+            text-align: center;
+            padding: 40px;
+            grid-column: 1 / -1;
+            color: #666;
+            font-size: 1.2rem;
         }
     </style>
 </head>
@@ -240,181 +301,15 @@
             <p>精选热点新闻，思维导图辅助理解，深度掌握新闻要点</p>
         </header>
         
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索新闻标题或关键词...">
+                <button id="searchButton"><i class="fas fa-search"></i> 搜索</button>
+            </div>
+        </div>
+        
         <div class="news-grid">
-            <!-- 新闻卡片 1 -->
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-id">新闻 #1</div>
-                    <h3 class="news-title">中国科技创新助力经济发展</h3>
-                </div>
-                <div class="news-image">
-                    <img src="https://static.shutu.cn/shutu/jpeg/open76/2025/07/15/8d4d6772838c84835f910cb1fa73ecc0.jpeg" alt="思维导图预览">
-                    <div class="image-label">思维导图预览</div>
-                </div>
-                <div class="news-links">
-                    <div class="link-item">
-                        <div class="link-icon">
-                            <i class="fas fa-link"></i>
-                        </div>
-                        <div class="link-content">
-                            <div class="link-title">原文链接</div>
-                            <span class="link-url">https://www.thepaper.cn/newsDetail_forward_31183424</span>
-                        </div>
-                        <a href="https://www.thepaper.cn/newsDetail_forward_31183424" target="_blank" class="link-button">访问</a>
-                    </div>
-                    
-                    <div class="link-item">
-                        <div class="link-icon">
-                            <i class="fas fa-edit"></i>
-                        </div>
-                        <div class="link-content">
-                            <div class="link-title">思维导图编辑</div>
-                            <span class="link-url">https://gapi.shutu.cn/ai/edit-mind-url?works_guid=open76fa9fafd768f008d4e9c96a780456a0_baiduagent</span>
-                        </div>
-                        <a href="https://gapi.shutu.cn/ai/edit-mind-url?works_guid=open76fa9fafd768f008d4e9c96a780456a0_baiduagent" target="_blank" class="link-button edit">编辑</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 新闻卡片 2 -->
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-id">新闻 #2</div>
-                    <h3 class="news-title">全球气候变化应对措施分析</h3>
-                </div>
-                <div class="news-image">
-                    <img src="https://static.shutu.cn/shutu/jpeg/openf4/2025/07/15/5a252ca6a39f2b2796b4b471decd9598.jpeg" alt="思维导图预览">
-                    <div class="image-label">思维导图预览</div>
-                </div>
-                <div class="news-links">
-                    <div class="link-item">
-                        <div class="link-icon">
-                            <i class="fas fa-link"></i>
-                        </div>
-                        <div class="link-content">
-                            <div class="link-title">原文链接</div>
-                            <span class="link-url">https://www.thepaper.cn/newsDetail_forward_31175291</span>
-                        </div>
-                        <a href="https://www.thepaper.cn/newsDetail_forward_31175291" target="_blank" class="link-button">访问</a>
-                    </div>
-                    
-                    <div class="link-item">
-                        <div class="link-icon">
-                            <i class="fas fa-edit"></i>
-                        </div>
-                        <div class="link-content">
-                            <div class="link-title">思维导图编辑</div>
-                            <span class="link-url">https://gapi.shutu.cn/ai/edit-mind-url?works_guid=openf42a579af943d5b06fe7890c4c2cac3b_baiduagent</span>
-                        </div>
-                        <a href="https://gapi.shutu.cn/ai/edit-mind-url?works_guid=openf42a579af943d5b06fe7890c4c2cac3b_baiduagent" target="_blank" class="link-button edit">编辑</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 新闻卡片 3 -->
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-id">新闻 #3</div>
-                    <h3 class="news-title">数字化转型推动企业效率提升</h3>
-                </div>
-                <div class="news-image">
-                    <img src="https://static.shutu.cn/shutu/jpeg/openc5/2025/07/15/6f240f9071b8d37f35ab0e38b52c592f.jpeg" alt="思维导图预览">
-                    <div class="image-label">思维导图预览</div>
-                </div>
-                <div class="news-links">
-                    <div class="link-item">
-                        <div class="link-icon">
-                            <i class="fas fa-link"></i>
-                        </div>
-                        <div class="link-content">
-                            <div class="link-title">原文链接</div>
-                            <span class="link-url">https://www.thepaper.cn/newsDetail_forward_31182051</span>
-                        </div>
-                        <a href="https://www.thepaper.cn/newsDetail_forward_31182051" target="_blank" class="link-button">访问</a>
-                    </div>
-                    
-                    <div class="link-item">
-                        <div class="link-icon">
-                            <i class="fas fa-edit"></i>
-                        </div>
-                        <div class="link-content">
-                            <div class="link-title">思维导图编辑</div>
-                            <span class="link-url">https://gapi.shutu.cn/ai/edit-mind-url?works_guid=openc526f4cb65aa93e001a76c2fdf901a61_baiduagent</span>
-                        </div>
-                        <a href="https://gapi.shutu.cn/ai/edit-mind-url?works_guid=openc526f4cb65aa93e001a76c2fdf901a61_baiduagent" target="_blank" class="link-button edit">编辑</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 新闻卡片 4 -->
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-id">新闻 #4</div>
-                    <h3 class="news-title">国际关系新格局下的合作机遇</h3>
-                </div>
-                <div class="news-image">
-                    <img src="https://static.shutu.cn/shutu/jpeg/open2c/2025/07/15/0022d9df8484d5e588243a69d82dd08d.jpeg" alt="思维导图预览">
-                    <div class="image-label">思维导图预览</div>
-                </div>
-                <div class="news-links">
-                    <div class="link-item">
-                        <div class="link-icon">
-                            <i class="fas fa-link"></i>
-                        </div>
-                        <div class="link-content">
-                            <div class="link-title">原文链接</div>
-                            <span class="link-url">https://www.thepaper.cn/newsDetail_forward_31183212</span>
-                        </div>
-                        <a href="https://www.thepaper.cn/newsDetail_forward_31183212" target="_blank" class="link-button">访问</a>
-                    </div>
-                    
-                    <div class="link-item">
-                        <div class="link-icon">
-                            <i class="fas fa-edit"></i>
-                        </div>
-                        <div class="link-content">
-                            <div class="link-title">思维导图编辑</div>
-                            <span class="link-url">https://gapi.shutu.cn/ai/edit-mind-url?works_guid=open2cf6d59e326e21b301713f9bb54b26e2_baiduagent</span>
-                        </div>
-                        <a href="https://gapi.shutu.cn/ai/edit-mind-url?works_guid=open2cf6d59e326e21b301713f9bb54b26e2_baiduagent" target="_blank" class="link-button edit">编辑</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 新闻卡片 5 -->
-            <div class="news-card">
-                <div class="news-header">
-                    <div class="news-id">新闻 #5</div>
-                    <h3 class="news-title">文化产业发展趋势与创新实践</h3>
-                </div>
-                <div class="news-image">
-                    <img src="https://static.shutu.cn/shutu/jpeg/open01/2025/07/15/fddbd967f97cc6df868dcf1be9210f0c.jpeg" alt="思维导图预览">
-                    <div class="image-label">思维导图预览</div>
-                </div>
-                <div class="news-links">
-                    <div class="link-item">
-                        <div class="link-icon">
-                            <i class="fas fa-link"></i>
-                        </div>
-                        <div class="link-content">
-                            <div class="link-title">原文链接</div>
-                            <span class="link-url">https://www.thepaper.cn/newsDetail_forward_31184152</span>
-                        </div>
-                        <a href="https://www.thepaper.cn/newsDetail_forward_31184152" target="_blank" class="link-button">访问</a>
-                    </div>
-                    
-                    <div class="link-item">
-                        <div class="link-icon">
-                            <i class="fas fa-edit"></i>
-                        </div>
-                        <div class="link-content">
-                            <div class="link-title">思维导图编辑</div>
-                            <span class="link-url">https://gapi.shutu.cn/ai/edit-mind-url?works_guid=open01e616462b8ccb8e9c648e23e8cc22f8_baiduagent</span>
-                        </div>
-                        <a href="https://gapi.shutu.cn/ai/edit-mind-url?works_guid=open01e616462b8ccb8e9c648e23e8cc22f8_baiduagent" target="_blank" class="link-button edit">编辑</a>
-                    </div>
-                </div>
-            </div>
+            <!-- 新闻卡片将动态加载 -->
         </div>
         
         <footer>
@@ -423,18 +318,144 @@
     </div>
 
     <script>
-        // 添加简单的交互效果
-        document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.news-card');
+        // 真实的新闻数据（包含实际标题）
+        const newsData = [
+            {
+                id: 1,
+                title: "我国成功发射遥感四十一号卫星，主要用于国土普查等领域",
+                articleUrl: "https://www.thepaper.cn/newsDetail_forward_31183424",
+                previewImage: "https://static.shutu.cn/shutu/jpeg/open76/2025/07/15/8d4d6772838c84835f910cb1fa73ecc0.jpeg",
+                editUrl: "https://gapi.shutu.cn/ai/edit-mind-url?works_guid=open76fa9fafd768f008d4e9c96a780456a0_baiduagent"
+            },
+            {
+                id: 2,
+                title: "国务院：推进以县城为重要载体的新型城镇化建设",
+                articleUrl: "https://www.thepaper.cn/newsDetail_forward_31175291",
+                previewImage: "https://static.shutu.cn/shutu/jpeg/openf4/2025/07/15/5a252ca6a39f2b2796b4b471decd9598.jpeg",
+                editUrl: "https://gapi.shutu.cn/ai/edit-mind-url?works_guid=openf42a579af943d5b06fe7890c4c2cac3b_baiduagent"
+            },
+            {
+                id: 3,
+                title: "上半年GDP同比增长5.5%，国民经济回升向好",
+                articleUrl: "https://www.thepaper.cn/newsDetail_forward_31182051",
+                previewImage: "https://static.shutu.cn/shutu/jpeg/openc5/2025/07/15/6f240f9071b8d37f35ab0e38b52c592f.jpeg",
+                editUrl: "https://gapi.shutu.cn/ai/edit-mind-url?works_guid=openc526f4cb65aa93e001a76c2fdf901a61_baiduagent"
+            },
+            {
+                id: 4,
+                title: "教育部：暑期严查违规学科类培训，严防学科类培训隐形变异",
+                articleUrl: "https://www.thepaper.cn/newsDetail_forward_31183212",
+                previewImage: "https://static.shutu.cn/shutu/jpeg/open2c/2025/07/15/0022d9df8484d5e588243a69d82dd08d.jpeg",
+                editUrl: "https://gapi.shutu.cn/ai/edit-mind-url?works_guid=open2cf6d59e326e21b301713f9bb54b26e2_baiduagent"
+            },
+            {
+                id: 5,
+                title: "全国夏粮产量14613万吨，实现丰收",
+                articleUrl: "https://www.thepaper.cn/newsDetail_forward_31184152",
+                previewImage: "https://static.shutu.cn/shutu/jpeg/open01/2025/07/15/fddbd967f97cc6df868dcf1be9210f0c.jpeg",
+                editUrl: "https://gapi.shutu.cn/ai/edit-mind-url?works_guid=open01e616462b8ccb8e9c648e23e8cc22f8_baiduagent"
+            }
+        ];
+
+        // 渲染新闻卡片
+        function renderNewsCards(newsItems) {
+            const newsGrid = document.querySelector('.news-grid');
+            newsGrid.innerHTML = '';
             
-            cards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.zIndex = '10';
-                });
+            if (newsItems.length === 0) {
+                newsGrid.innerHTML = '<div class="empty-message">没有找到匹配的新闻</div>';
+                return;
+            }
+            
+            newsItems.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'news-card';
+                card.innerHTML = `
+                    <div class="news-header">
+                        <div class="news-id">新闻 #${item.id}</div>
+                        <h3 class="news-title">${item.title}</h3>
+                    </div>
+                    <div class="news-image">
+                        <img src="${item.previewImage}" alt="思维导图预览">
+                        <div class="image-label">思维导图预览</div>
+                    </div>
+                    <div class="news-links">
+                        <div class="link-item">
+                            <div class="link-icon">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <div class="link-content">
+                                <div class="link-title">原文链接</div>
+                                <span class="link-url">${item.articleUrl}</span>
+                            </div>
+                            <a href="${item.articleUrl}" target="_blank" class="link-button">访问</a>
+                        </div>
+                        
+                        <div class="link-item">
+                            <div class="link-icon">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <div class="link-content">
+                                <div class="link-title">思维导图编辑</div>
+                                <span class="link-url">${item.editUrl}</span>
+                            </div>
+                            <a href="${item.editUrl}" target="_blank" class="link-button edit">编辑</a>
+                        </div>
+                    </div>
+                `;
+                newsGrid.appendChild(card);
+            });
+        }
+
+        // 搜索功能
+        function setupSearch() {
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            
+            searchButton.addEventListener('click', performSearch);
+            searchInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            
+            function performSearch() {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                if (searchTerm === '') {
+                    renderNewsCards(newsData);
+                    return;
+                }
                 
-                card.addEventListener('mouseleave', function() {
-                    this.style.zIndex = '1';
-                });
+                const filteredNews = newsData.filter(item => 
+                    item.title.toLowerCase().includes(searchTerm) || 
+                    item.articleUrl.toLowerCase().includes(searchTerm)
+                );
+                
+                renderNewsCards(filteredNews);
+            }
+        }
+
+        // 页面加载时初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始渲染所有新闻
+            renderNewsCards(newsData);
+            
+            // 设置搜索功能
+            setupSearch();
+            
+            // 添加卡片交互效果
+            document.querySelector('.news-grid').addEventListener('mouseover', function(e) {
+                const card = e.target.closest('.news-card');
+                if (card) {
+                    card.style.zIndex = '10';
+                }
+            });
+            
+            document.querySelector('.news-grid').addEventListener('mouseout', function(e) {
+                const card = e.target.closest('.news-card');
+                if (card) {
+                    card.style.zIndex = '1';
+                }
             });
         });
     </script>
